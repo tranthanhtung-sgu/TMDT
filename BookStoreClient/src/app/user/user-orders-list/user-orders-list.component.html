@@ -1,0 +1,22 @@
+<div class="breadcrumb-container d-flex">
+    <div class="breadcrumb-body">
+        <h1>Order Manage</h1>
+        <div class="path">
+            <a class="home-breadcrumb" href="/">Home</a>
+            <span>/ OrderManage</span>
+        </div>
+    </div>
+</div>
+<div class="container-fluid d-flex">
+    <div class="row m-auto flex-1">
+        <div class="col mt-4 mb-4">
+            <div class="container mt-3 mb-3 border-1">
+                <div class="row">
+                    <div *ngFor="let item of items">
+                        <app-book-order [item]='item'></app-book-order>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

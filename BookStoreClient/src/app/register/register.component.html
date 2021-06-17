@@ -1,0 +1,44 @@
+<div class="breadcrumb-container d-flex">
+  <div class="breadcrumb-body">
+    <h1>My Account</h1>
+    <div class="path">
+      <a href="">Home</a>
+      <span>/ My Account</span>
+    </div>
+  </div>
+</div>
+<div class="container-fluid d-flex">
+  <div class="row m-auto flex-1">
+    <div class="col">
+      <h1>Register</h1>
+      <form [formGroup]='registerForm' (ngSubmit)="registerForm.valid && register()">
+        <label for="exampleInputEmail1" class="form-label">Username</label>
+        <app-text-input [formControl]='registerForm.controls["userName"]' [label]='"Tên đăng nhập"'></app-text-input>
+        
+        <label for="exampleInputEmail1" class="form-label">Full name</label>
+        <app-text-input [formControl]='registerForm.controls["fullName"]' [label]='"Họ và tên"'></app-text-input>
+        
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <app-text-input [formControl]='registerForm.controls["email"]' [label]='"Email"'></app-text-input>
+        
+        <label for="exampleInputEmail1" class="form-label">Phone number</label>
+        <app-text-input [formControl]='registerForm.controls["phoneNumber"]' [label]='"Điện thoại"'></app-text-input>
+        
+        <label for="exampleInputEmail1" class="form-label">Address</label>
+        <app-text-input [formControl]='registerForm.controls["homeAddress"]' [label]='"Địa chỉ"'></app-text-input>
+        
+        <label for="exampleInputEmail1" class="form-label">Password</label>
+        <app-text-input [formControl]='registerForm.controls["password"]' [label]='"Mật khẩu"' [type]='"password"'>
+        </app-text-input>
+        
+        <label for="exampleInputEmail1" class="form-label">Confirm Password</label>
+        <app-text-input [formControl]='registerForm.controls["confirmPassword"]' [label]='"Xác thực mật khẩu"'
+          [type]='"password"'></app-text-input>
+        <div class="form-group text-center">
+          <button [disabled]='!registerForm.valid' class="btn btn-login mr-2" type="submit">Đăng ký</button>
+          <button class="btn btn-login mr-2" (click)="cancel()">Hủy bỏ</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

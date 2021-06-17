@@ -1,0 +1,95 @@
+<div class="py-5 text-center" style="background-color: slategray; width: 100%;">
+
+    <p class="lead" style="color: white; font-size: 50px;">Cart</p>
+</div>
+<div class="container mt-3">
+    <div class="container cart">
+        <table *ngIf="items?.length != 0">
+            <tr class="header_cart">
+                <th>X</th>
+                <th>Image</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+
+            </tr>
+
+            <tr *ngFor="let item of items">
+                <td><a (click)="deleteItem(item.book.name, item.book.id)" class="close">x</a></td>
+                <td>
+                    <div class="cart-info">
+                        <img src="{{item.book.image || '/assets/user.png'}}" />
+                        <div class="product_name">
+                            <p></p>
+                        </div>
+                    </div>
+                </td>
+                <td>{{showPrice(item.book) | currency}}</td>
+                <td> <input type="number" #quantity (change)="changeQuantity(cart.id, item.id, quantity.value)"
+                        value="{{item.quantity}}" min="1" /> </td>
+                <td>{{item.totalPrice | currency}}</td>
+            </tr>
+            <!-- <tr>
+                <td><a href="#" class="close"></a></td>
+                <td>
+                    <div class="cart-info">
+                        <img src="http://s.s-bol.com/imgbase0/imagebase/large/FC/8/8/9/8/1001004006878988.jpg" alt="" />
+                        <div class="product_name">
+                            <p></p>
+                        </div>
+                    </div>
+                </td>
+                <td></td>
+                <td><input type="number" value="1" min="1" /></td>
+                <td>$50.00</td>
+            </tr> -->
+
+        </table>
+        <hr *ngIf="items?.length != 0" style="width:100%;text-align:left;margin-left:0;color:black">
+        <a href="books/" class="link-secondary" *ngIf="items?.length == 0">
+            <div class="font-weight-bold text-lg-center">
+                <p style="font-size: 30px;"><i class="fad fa-long-arrow-left"></i> Back to shop !</p>
+            </div>
+        </a>
+
+
+        <div class="row">
+
+            <div class="col">
+                <div class="row row-cols-2">
+
+
+                    <!-- <div class="col">
+                  <app-book-card></app-book-card>
+              </div>
+                <div class="col">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="col">
+                    <app-book-card></app-book-card>
+                </div> -->
+
+
+
+
+                </div>
+
+            </div>
+            <div class="col-6 mb-5" *ngIf="items?.length != 0">
+                <h2>Cart totals</h2>
+
+                <li class="list-group-item d-flex justify-content-between">
+                    <strong>Total</strong>
+                    <span class="text-muted">{{showTotalPrice() | currency}}</span>
+                </li>
+
+
+
+
+                <a class="btn btn-outline-dark" (click)="orderLink()" style="border-radius: 20px;width: 100%;">Proceed
+                    To
+                    Checkout</a>
+            </div>
+
+
+        </div>
