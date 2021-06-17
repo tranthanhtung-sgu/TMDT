@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ENHH+iXG7nZiaoNz/qu2PpIF//X1iFDIMjH6OwnJnTLUpltiubua3ui4tJlxSGVM69w4b3s35vhPfWkyfVlbVQ==",
+  "dgSpecHash": "Ay3vGEHL4asgQMJoYOb60A3OGIlPFlOj/AO8LC9roE9L0K8/LUN058ZQvsF1R8+AhUxqq5k/ddAsRPI7LfLThw==",
   "success": true,
-  "projectFilePath": "/Users/tranthanhtung/Desktop/TMDT/BookStoreAPI/BookStoreApi.csproj",
+  "projectFilePath": "/Users/tranthanhtung/Desktop/BookStore/BookStoreAPI/BookStoreApi.csproj",
   "expectedPackageFiles": [
     "/Users/tranthanhtung/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/Users/tranthanhtung/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

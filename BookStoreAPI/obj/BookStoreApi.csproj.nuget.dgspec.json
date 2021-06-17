@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tranthanhtung/Desktop/TMDT/BookStoreAPI/BookStoreApi.csproj": {}
+    "/Users/tranthanhtung/Desktop/BookStore/BookStoreAPI/BookStoreApi.csproj": {}
   },
   "projects": {
-    "/Users/tranthanhtung/Desktop/TMDT/BookStoreAPI/BookStoreApi.csproj": {
+    "/Users/tranthanhtung/Desktop/BookStore/BookStoreAPI/BookStoreApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tranthanhtung/Desktop/TMDT/BookStoreAPI/BookStoreApi.csproj",
+        "projectUniqueName": "/Users/tranthanhtung/Desktop/BookStore/BookStoreAPI/BookStoreApi.csproj",
         "projectName": "BookStoreApi",
-        "projectPath": "/Users/tranthanhtung/Desktop/TMDT/BookStoreAPI/BookStoreApi.csproj",
+        "projectPath": "/Users/tranthanhtung/Desktop/BookStore/BookStoreAPI/BookStoreApi.csproj",
         "packagesPath": "/Users/tranthanhtung/.nuget/packages/",
-        "outputPath": "/Users/tranthanhtung/Desktop/TMDT/BookStoreAPI/obj/",
+        "outputPath": "/Users/tranthanhtung/Desktop/BookStore/BookStoreAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tranthanhtung/.nuget/NuGet/NuGet.Config"
